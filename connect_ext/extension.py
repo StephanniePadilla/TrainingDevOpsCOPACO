@@ -22,6 +22,8 @@ class MyweatherdemoExtension(Extension):
         )
         self.logger.info(f"Approved request {request['id']}")
 
+        Hey there this is just a test
+
     def process_asset_purchase_request(self, request):
         self.logger.info(f"Obtained request from company {request['asset']['tiers']['customer']['name']}")
         company = request['asset']['tiers']['customer']['name']
